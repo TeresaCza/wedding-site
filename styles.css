@@ -1,9 +1,20 @@
-*, *::before, *::after {
+/*********General styles *************/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /*Adding vertical rhythm */
-h1,h2,h3,ul,p,img,header,section,footer {
+h1,
+h2,
+h3,
+ul,
+p,
+img,
+header,
+section,
+footer {
   margin-bottom: 1.5rem;
 }
 
@@ -20,11 +31,12 @@ h1,h2,h3,ul,p,img,header,section,footer {
 
 body {
   background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
-  width: 100%; 
+  width: 100%;
 }
 
 /* Typography */
-h1, h2 {
+h1,
+h2 {
   font-family: 'Great Vibes', cursive;
 }
 
@@ -34,7 +46,11 @@ body {
   line-height: 1.5;
 }
 
-#program, #locations p, .question, .answer, footer {
+#program,
+#locations p,
+.question,
+.answer,
+footer {
   font-family: 'Muli', sans-serif;
 }
 
@@ -42,7 +58,8 @@ body {
   font-weight: bold;
 }
 
-.header-tagline, .date {  
+.header-tagline,
+.date {
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.05rem;
@@ -69,24 +86,31 @@ footer {
   font-size: 0.875rem;
 }
 
-h1, #program, #faq {
+h1,
+#program,
+#faq {
   color: #d2ba87;
 }
 
-header, footer {
-   color: hsla(100, 100%, 100%, 0.9);
+header,
+footer {
+  color: hsla(100, 100%, 100%, 0.9);
 }
 
-#locations, #gifts, #contact {
+#locations,
+#gifts,
+#contact {
   color: #444349;
 }
 
 a {
   text-decoration: none;
   color: #bd806e;
+  transition: all 0.15s ease-in-out;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #eda087;
 }
 
@@ -105,11 +129,11 @@ header {
 }
 
 #header-background {
-  background-color: hsla(100,0%,0%,.5);
+  background-color: hsla(100, 0%, 0%, .4);
   width: 100%;
 }
 
- .header-tagline::after {
+.header-tagline::after {
   display: block;
   content: "";
   background-color: #fff;
@@ -118,7 +142,8 @@ header {
   margin: .5rem auto;
 }
 
-.date::before, .date::after {
+.date::before,
+.date::after {
   display: inline-block;
   content: "";
   height: 1px;
@@ -128,13 +153,16 @@ header {
   margin: 0 0.5rem;
 }
 
-#header-background, #program, #faq {
-  background-color: hsla(100,0%,0%,.6);
+#header-background,
+#program,
+#faq {
+  background-color: hsla(100, 0%, 0%, .6);
 }
 
 /*Locations */
 
-.wrapper { /* container for #locations and #faq */
+.wrapper {
+  /* container for #locations and #faq */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,13 +209,14 @@ header {
   width: 7.5rem;
 }
 
-#gifts p:last-child {   /* To even out the bottom and top margins of this section. */
+#gifts p:last-child {
+  /* To even out the bottom and top margins of this section. */
   margin-bottom: 0;
 }
 
 /*Qustions and answers*/
 
-#faq {  
+#faq {
   width: 100%;
 }
 
@@ -226,7 +255,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;  
+  margin-bottom: 0;
   height: 80px;
   text-align: center;
 }
@@ -243,6 +272,7 @@ footer p {
 /*Media styles */
 
 @media (min-width: 768px) {
+
   #header-background {
     border-radius: 4px;
     padding: 1.5rem;
@@ -257,7 +287,7 @@ footer p {
   h1 {
     font-size: 7rem;
   }
-  
+
   h3 {
     margin-top: 1rem;
   }
@@ -272,12 +302,14 @@ footer p {
     text-align: left;
   }
 
-  .blurb, .question-group {
+  .blurb,
+  .question-group {
     padding: 0 1rem;
     width: 30%;
   }
 
-  .blurb::after, .question-group::after {
+  .blurb::after,
+  .question-group::after {
     display: none;
   }
 
